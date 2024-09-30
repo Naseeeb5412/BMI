@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator with Gauge</title>
+    <link rel="stylesheet" href="styles.css">
+</head> 
+<body>
+    <div class="container" style="width: 400px;">
+        <h1>BMI Calculator</h1>
+        <div class="calculator">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Enter your weight" required>
+            
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" placeholder="Enter your height" required>
+            
+            <button onclick="calculateBMI()">Calculate BMI</button>
+            
+            <div id="result"></div>
+        </div>
+        
+        <div class="gauge-container">
+            <canvas id="gauge" width="250" height="200"></canvas>
+            <p id="gaugeRangeText">Low</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
